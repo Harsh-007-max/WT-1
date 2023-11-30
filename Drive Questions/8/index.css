@@ -1,0 +1,91 @@
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+a{
+    color:red;
+}
+.links{
+    width:100%;
+    margin:auto;
+    display: flex;
+    justify-content: right;
+    font-size: small;
+}
+.links > a{
+    padding:0px 4px;
+}
+
+.navLinks{
+    margin:1px 0px 0px 0px;
+    padding:10px;
+    background-color: rgb(174, 173, 173);
+}
+.title{
+    margin:1px 0px;
+    padding:10px;
+    background-color: rgb(174, 173, 173);
+}
+.titleContent{
+    font-size: large;
+}
+.subtitleContent{
+    font-size: x-small;
+}
+
+.body{
+    padding:10px;
+}
+.content1{
+    width:100%;
+}
+.contentTitle{
+    font-size: large;
+}
+.subcontentTitle{
+    font-size: x-small;
+}
+.content1 > p{
+    font-size:12px;
+}
+.triContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.tri{
+    width:33%;
+    background-color: rgb(174, 173, 173);
+    padding:10px;
+    height: fit-content;
+}
+.tri >p{
+    font-size: 12px;
+}
+.triTitle{
+    font-weight: bold;
+    padding:2px 0px;
+}
+.one >a{
+    font-size: 12px;
+}
+.two{
+    margin:0px 10px;
+}
+
+.quardContainer{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.quard{
+    width:25%;
+    height:fit-content;
+    background-color: rgb(174, 173, 173);
+    margin:5px;
+    padding:10px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}

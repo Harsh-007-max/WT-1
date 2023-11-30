@@ -1,0 +1,67 @@
+*{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+:root{
+    --borderColor: black;
+}
+.content,.item,.signInBtn{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+}
+.item{
+    border-radius: 0.5em;
+}
+.item:hover{
+    background-color: antiquewhite;
+}
+.sidebar{
+    width:14.22%;
+    border: 1px solid var(--borderColor);
+}
+
+.videos{
+    display:flex;
+    flex-direction: column;
+    width:85.77%;
+    border: 1px solid var(--borderColor);
+}
+.item>span{
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
+.icons{
+    width:3vh;
+}
+.option{
+
+    font-size: 2dvh;
+    align-items: center;
+}
+.txtSignIn{
+    margin:1dvh;
+}
+.signInBtn{
+    margin-top:1dvh;
+    align-items: center;
+    border: 1px solid lightgray;
+    color:blue;
+    padding:5px 10px 0px 10px;
+    border-radius: 07rem;
+    width:fit-content
+}
+.signInBtn:hover{
+    background-color: lightblue;
+}
+.signInBtn>a{
+    text-decoration: none;
+}
+.signInBtn>a>span{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}

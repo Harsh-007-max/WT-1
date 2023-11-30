@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isPrint(n) {
+        if (n == 0 || n == 1) return false;
+
+        for (var j = 2; j <= n / 2; j++) {
+          if (n % j == 0) {
+            return false;
+          }
+        }
+
+        // console.log("it is a prime");
+        return true;
+      }
+      var starting = Number(prompt("Enter starting number: "));
+      var ending = Number(prompt("Enter ending number: "));
+      for (var i = starting; i <= ending; i++) {
+        if (isPrint(i)) {
+          document.write(i + ", ");
+        }
+    }
+    </script>
+  </body>
+</html>

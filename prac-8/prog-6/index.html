@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function toWords(num) {
+        var origNo = num;
+        var length = num.toString().length;
+        var pre = "hundred ";
+        var tens = [
+          "ten ",
+          "eleven ",
+          "twelve ",
+          "thirteen ",
+          "fourteen ",
+          "fifteen ",
+          "sixteen ",
+          "seventeen ",
+          "eighteen ",
+          "nineteen ",
+        ];
+        var twen = [
+          "",
+          "",
+          "twenty ",
+          "thirty ",
+          "forty ",
+          "fifty ",
+          "sixty ",
+          "seventy ",
+          "eighty ",
+          "ninety ",
+        ];
+        var digit = [
+          "",
+          "one ",
+          "two ",
+          "three ",
+          "four ",
+          "five ",
+          "six ",
+          "seven ",
+          "eight ",
+          "nine ",
+        ];
+        var numInWords = "";
+        if (length === 3) {
+          numInWords += digit[Number(num.toString()[0])];
+          numInWords += pre;
+          if(String(update(num)).length!=1){
+            num = update(num);
+          }
+          length--;
+        }
+        if (length === 2) {
+          if (num.toString()[0] === "0") {
+            numInWords += "";
+          }
+          if (num >= 19 && num <= 10) {
+            numInWords += tens[Number(num.toString()[0])];
+          }
+          if (num >= 20 && num <= 99) {
+            numInWords += twen[Number(num.toString()[0])];
+          }
+          num = update(num);
+          length--;
+        }
+        if (length === 1) {
+          console.log("length 1");
+          if (origNo > 0) {
+            numInWords += digit[num.toString()[0]];
+          } else {
+            numInWords += "zero";
+          }
+          length--;
+        }
+        return numInWords;
+      }
+      function update(num) {
+        let Newnum;
+        Newnum = Array.from(String(num));
+        Newnum.shift();
+        num = Number(Newnum.join(""));
+        return num;
+      }
+      var num = Number(prompt("Enter a number: "));
+      if (typeof num === "NaN") {
+        if (num <= 999 && num >= 0) {
+          document.write("Number in words: " + toWords(num));
+        } else {
+          document.write("out of range");
+        }
+      } else {
+        document.write("not a number");
+      }
+    </script>
+  </body>
+</html>

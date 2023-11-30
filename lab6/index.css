@@ -1,0 +1,83 @@
+*{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "JetBrainsMono Nerd Font";
+    font-style: normal;
+    font-weight: 100;
+    src: url('https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Thin/complete/JetBrains%20Mono%20Thin%20Nerd%20Font%20Complete.ttf') format('truetype');
+}
+:root{
+    --borderColor: black;
+}
+.base{
+    /* border:1px solid var(--borderColor); */
+}
+.topbar{
+    /* border:1px solid var(--borderColor); */
+}
+.searchBar{
+    /* border:1px solid var(--borderColor); */
+    /* display:flex;
+    flex-direction: row; */
+    /* height:15%; */
+    background-color: red;
+    margin:0px;
+}
+.bb{
+    float: left;
+    width:33.33%;
+    padding-right: 10px;
+    border:1px solid var(--borderColor);
+}
+.searchButton{
+    float:left;
+    padding:3px 5px;
+    border:0px;
+    border-radius: 100%;
+    margin-top:15px;
+}
+.sep{
+    /* margin-left:15px; */
+    border-radius: 50%;
+    padding:3px 5px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.searchIcon{
+    width:20px;
+    background-color: white;
+    background-size: cover;
+}
+.search{
+    margin-top: 10px;
+    width:550px;
+    border: 2px solid black;
+}
+.search input::before{
+    font-family:'JetBrainsMono Nerd Font';
+}
+.search input{
+    border:0px;
+    /* border:10px solid var(--borderColor); */
+    border-radius: 20px;
+    margin-top:1.5%;
+    float:left;
+    margin-left:5%;
+    margin-right:1%;
+    padding: 7px;
+    width:fit-content
+}
+.burgerButton{
+    width:50px;
+    padding:10px;
+}
+.right{
+    /* margin-top:0px; */
+    margin:0px;
+    border: 2px solid black;
+}
+.menu{
+    /* border:1px solid var(--borderColor); */
+}

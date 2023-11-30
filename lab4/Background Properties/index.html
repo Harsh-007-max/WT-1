@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        .hello{
+            height:100dvh;
+            /* width: 100dvw; */
+            background-image: url("background2.png");
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: contain;
+            opacity: 0.5;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+        }
+        marquee{
+            top:65%;
+            left:0;
+            position:absolute;
+        }
+        img{
+            height: 20dvh;
+            /* opacity:0.9; */
+            z-index: 999;
+        }
+    </style>
+</head>
+<body >
+    <div class="hello">
+        <video src="./1.mp4" controls></video>
+    </div>
+    <audio controls>
+        <source
+        src="./old_Sawan Ki Ghata-Zara Haule.mp3"/>
+        </audio>
+    <marquee behavior="" direction="left" scrollamount="10">
+        <img src="./ak.jpg">
+    </marquee>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: linear-gradient(red,yellow);
+            width:200px;
+            height:200px;
+            animation-name: animation1;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+            position:relative;
+            /* animation: infinite; */
+        }
+        @keyframes animation1 {
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top:0px;
+                left:200px;
+            }
+            50%{
+                top:200px;
+                left:200px;
+            }
+            75%{
+                top:200px;
+                left:0px;
+            }
+            100%{
+                top:0px;
+                left:0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

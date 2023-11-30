@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var flag = true;
+        var num = parseInt(prompt("Enter a number: "))
+        if(num === 0 || num ===1)
+        {
+            document.write(num===0?"number = 0":"Number = 1")
+        }
+        else{
+        for(var i =2 ;i<num;i++){
+            if(num%i===0){
+                flag = false
+                break
+            }
+        }
+        document.write(flag?"Number is prime":"Number is not prime")
+    }
+    </script>
+</body>
+</html>

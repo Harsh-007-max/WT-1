@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num = Number(prompt("Enter a number"));
+      var base = Number(num.toString().split("")[0]);
+      var power =Number( num.toString().split("")[1]);
+      var result = 1;
+      //   for (var i = 1; i <= power; i++) {
+      //     result*=base
+      //   }
+      result = Math.pow(base, power);
+      document.writeln(result);
+    </script>
+  </body>
+</html>

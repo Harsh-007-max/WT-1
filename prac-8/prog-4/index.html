@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Enter a number: "));
+        var b = Number(prompt("Enter another number: "));
+        var count = Math.min(a,b);
+        var i = count;
+        for(i=count;i>0;i--){
+            if(a%i ===0 && b%i ===0){
+                break;
+            }
+        }
+        document.write(count);
+    </script>
+</body>
+</html>

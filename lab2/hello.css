@@ -1,0 +1,39 @@
+img{
+    /* max-width:fit-content; */
+    /* max-width: 150px;
+    max-height:150px; */
+    width:100%;
+    /* height:150px; */
+    border-radius: 5px;
+    background-color: black;
+    /* filter: grayscale(); */
+}
+p{
+    
+    text-align: center;
+}
+.desig{
+    text-align: center;
+    color: red;
+    padding:0px;
+    margin: 0px;
+}
+.deg{
+    text-align: center;
+    padding:0px;
+    margin: 0px;
+}
+.space{
+    width:100px;
+    height: 10px;
+    background-color: black;
+}
+td{
+    padding:20px;
+    border: 2px solid black;
+    border-radius: 10px; */
+}
+
+.card{
+    align-items: center;
+}

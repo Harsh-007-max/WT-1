@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="0">
+            <tr>
+                <td>Enter First Name</td>
+                <td>:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Enter Last Name</td>
+                <td>:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>:</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Enter Mobile</td>
+                <td>:</td>
+                <td><input type="text" pattern="[0-9]{10}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td>Enter DoB</td>
+                <td>:</td>
+                <td>
+                    <input type="date" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Gender</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="Gender" value="Male" required> Male
+                    <input type="radio" name="Gender" value="Female" > Female
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Language</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" value="C" required>C <br>
+                    <input type="checkbox" value="C++" >C++ <br>
+                    <input type="checkbox" value="Java" >Java <br>
+                    <input type="checkbox" value="Python" >Python<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Department</td>
+                <td>:</td>
+                <td>
+                    <select>
+                        <option value="" required>Enter Department here</option>
+                        <option value="Computer">Computer</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Address</td>
+                <td>:</td>
+                <td>
+                    <textarea required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
