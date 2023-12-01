@@ -88,7 +88,8 @@
         return num;
       }
       var num = Number(prompt("Enter a number: "));
-      if (typeof num === "NaN") {
+      console.log(num)
+      if (num != NaN) {
         if (num <= 999 && num >= 0) {
           document.write("Number in words: " + toWords(num));
         } else {
